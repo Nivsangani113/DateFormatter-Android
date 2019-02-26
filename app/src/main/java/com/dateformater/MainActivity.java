@@ -11,7 +11,7 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static String TAG = MainActivity.class.getSimpleName();
+    public static String TAG = "MainActivity";
 
     String strDate = "26-2-2019";
     String strCreatedDate = "24-2-2018";
