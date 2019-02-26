@@ -206,24 +206,4 @@ public class FormatConversation {
         return calendar.getTime();
     }
 
-    public static String getDateInEnglish(String inputDate, String dateFormat) {
-
-        String finalDate = "";
-
-        if (LocaleUtils.getLocale(MyApplication.getInstance()).equalsIgnoreCase("en")) {
-            finalDate = inputDate;
-        } else {
-            try {
-
-                SimpleDateFormat sdf = new SimpleDateFormat(dateFormat);
-                Date date = sdf.parse(inputDate);
-                SimpleDateFormat finalDateFormat = new SimpleDateFormat(dateFormat, Locale.US);
-                finalDate = finalDateFormat.format(date);
-            } catch (ParseException e) {
-                e.printStackTrace();
-            }
-        }
-        return finalDate;
-    }
-
 }
