@@ -2,10 +2,13 @@
 Android library for working with Date Formats in Android SDK
 
 Add it in your root build.gradle at the end of repositories:
+
+
   allprojects {
       repositories {
-        ...
-        maven { url 'https://jitpack.io' }
+        maven {
+        url 'https://jitpack.io'
+        }
       }
     }
   
