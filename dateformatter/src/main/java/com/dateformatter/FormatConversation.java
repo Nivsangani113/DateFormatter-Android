@@ -226,16 +226,20 @@ public class FormatConversation {
      * @param seconds - provide seconds for getting duration of given seconds
      * @return
      */
-    public static String getDurationFromSeconds(int seconds) {
-
+    public static String[] getDurationFromSeconds(int seconds) {
+        String[] duration = new String[]{"0","0","0"};
         if (seconds > 0) {
+            duration = new String[3];
             int hours = seconds / 3600;
             int minutes = (seconds % 3600) / 60;
             seconds = seconds % 60;
 
-            return "" + twoDigitString(hours) + ":" + twoDigitString(minutes) + ":" + twoDigitString(seconds);
+            duration[0] = twoDigitString(hours);
+            duration[1] = twoDigitString(minutes);
+            duration[2] = twoDigitString(seconds);
+
         }
-        return "";
+        return duration;
     }
 
 
