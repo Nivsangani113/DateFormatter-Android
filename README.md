@@ -22,7 +22,7 @@ Add it in your root build.gradle at the end of repositories:
  
    dependencies {
    
-            implementation 'com.github.Nivsangani113:DateFormatter-Android:Tag'
+            implementation 'com.github.Nivsangani113:DateFormatter-Android:0.1.0'
             
     }
 
